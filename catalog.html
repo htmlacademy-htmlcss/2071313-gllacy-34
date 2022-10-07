@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body class="body-pink">
@@ -216,7 +218,7 @@
                 <li class="catalog-radio-item">
                   <label class="catalog-radio-label">
                     <input class="real-radio-btn visually-hidden" type="radio" name="bluetooth" value="yes"
-                      tabindex="-1">
+                      tabindex="-1" disabled checked>
                     <span class="radio-btn" tabindex="0"></span>
                     0%
                   </label>
@@ -251,24 +253,26 @@
               <legend class="catalog-legend">Наполнители:</legend>
               <ul class="catalog-radio-list catalog-check-list">
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="custom-checkbox" id="chocolad" name="chocolad" value="yes">
-                  <label class="catalog-radio-label control" for="chocolad">шоколадные</label>
+                  <input type="checkbox" class="custom-checkbox" id="chocolad" name="chocolad" value="yes" tabindex="-1"
+                    checked disabled>
+                  <label class="catalog-radio-label control" for="chocolad" tabindex="0">шоколадные</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="custom-checkbox" id="shugar" name="shugar" value="yes">
-                  <label class="catalog-radio-label control" for="shugar">сахарные посыпки</label>
+                  <input type="checkbox" class="custom-checkbox" id="shugar" name="shugar" value="yes" tabindex="-1"
+                    checked>
+                  <label class="catalog-radio-label control" for="shugar" tabindex="0">сахарные посыпки</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="custom-checkbox" id="fruits" name="fruits" value="yes">
-                  <label class="catalog-radio-label control" for="fruits">фрукты</label>
+                  <input type="checkbox" class="custom-checkbox" id="fruits" name="fruits" value="yes" tabindex="-1">
+                  <label class="catalog-radio-label control" for="fruits" tabindex="0">фрукты</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="custom-checkbox" id="syrup" name="syrup" value="yes">
-                  <label class="catalog-radio-label control" for="syrup">сиропы</label>
+                  <input type="checkbox" class="custom-checkbox" id="syrup" name="syrup" value="yes" tabindex="-1">
+                  <label class="catalog-radio-label control" for="syrup" tabindex="0">сиропы</label>
                 </li>
                 <li class="catalog-filter-item">
-                  <input type="checkbox" class="custom-checkbox" id="jam" name="jam" value="yes">
-                  <label class="catalog-radio-label control" for="jam">джемы</label>
+                  <input type="checkbox" class="custom-checkbox" id="jam" name="jam" value="yes" tabindex="-1">
+                  <label class="catalog-radio-label control" for="jam" tabindex="0">джемы</label>
                 </li>
               </ul>
             </fieldset>

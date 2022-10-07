@@ -1402,7 +1402,7 @@ body {
 }
 
 .subscription-text {
-  margin: 0;
+  margin: 0 0 20px;
   width: 506px;
 }
 
@@ -2082,6 +2082,16 @@ body {
   opacity: 0.3;
 }
 
+.real-radio-btn:disabled + .radio-btn:not([hover]) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.real-radio-btn:checked:disabled + .radio-btn:not([hover]) {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 .radio-btn::before {
   content: '';
   display: inline-block;
@@ -2102,7 +2112,7 @@ body {
 
 .catalog-check-list {
   justify-content: space-around;
-  padding: 0 17px 0 15px;
+  padding: 0 15px 0 20px;
   height: 40px;
   min-width: 604px;
 }
@@ -2143,26 +2153,48 @@ body {
 
 .control {
   display: inline-flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .control::before {
-  content: '';
-  width: 15px;
-  height: 15px;
-  border: 1.3px solid #000000;
-  border-radius: 3px;
-  margin-right: 9px;
+  content: "";
+  display: block;
+  position: relative;
+  right: 4px;
+  width: 16px;
+  height: 16px;
+  background-image: url("images/vector/checkbox2.svg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 50% 50%;
   cursor: pointer;
 }
 
+.control:hover::before {
+  background-image: url("images/vector/checkbox-hover2.svg");
+}
+
 .custom-checkbox:checked + .control::before {
-  background-image: url("images/vector/checkbox.svg");
-  background-size: 14px;
-  background-position: top;
+  background-image: url("images/vector/checkbox1.svg");
+}
+
+.custom-checkbox:checked + .control:hover::before {
+  background-image: url("images/vector/checkbox-hover1.svg");
+}
+
+.custom-checkbox:disabled + .control:not([hover])::before {
+  opacity: 0.5;
+  background-image: url("images/vector/checkbox2.svg");
+  cursor: default;
+}
+
+.custom-checkbox:checked:disabled + .control:not([hover])::before {
+  opacity: 0.5;
+  background-image: url("images/vector/checkbox1.svg");
+  cursor: default;
+}
+
+.control:focus-visible {
+  outline: 1.4px solid #000000;
+  outline-offset: 14px;
 }
 
 .catalog-filter-button {
