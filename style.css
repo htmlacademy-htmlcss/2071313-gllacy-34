@@ -39,6 +39,10 @@ body {
   color: #565C66;
 }
 
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
 .body-pink {
   background-color: #FEAFC3;
 }
@@ -1105,6 +1109,7 @@ body {
 
 .gift-wrapper {
   display: flex;
+
   width: 570px;
   min-height: 268px;
   background-color: #FF7799;
@@ -1147,6 +1152,7 @@ body {
 .gift-image {
   position: relative;
   right: 13px;
+  align-self: flex-end;
 }
 
 .marshmallow-image {
